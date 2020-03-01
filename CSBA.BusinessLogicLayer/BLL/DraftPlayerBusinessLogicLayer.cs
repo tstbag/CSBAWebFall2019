@@ -15,7 +15,7 @@ namespace CSBA.BusinessLogicLayer
         DraftPlayerDAL DAL = new DraftPlayerDAL();
         public List<sp_SeasonTeamDraft_Select_ResultDomainModel> DraftTeamList(int SeasonID)
         {
-            return DAL.DraftTeamList(SeasonID);
+            return DAL.DraftTeamList(SeasonID).OrderBy(x => x.TeamName).ToList();
         }
 
         public PickAPlayerDomainModel PickAPLayer(int SeasonID)

@@ -15,8 +15,8 @@ namespace CSBA.ImportData
     {
         //const string CWorkbook = "C:\\Class\\StatList.xls";
 
-        const string CWorkbook = "C:\\Users\\tstba\\Google Drive\\CSBAweb\\CSBAWeb\\Stats\\StatList2019_Fall2.xls";
-        const int C_SeasonID = 1039;
+        const string CWorkbook = "C:\\Users\\tstba\\Google Drive\\CSBAweb\\CSBAWeb\\Stats\\StatListSpring2020.xls";
+        const int C_SeasonID = 1040;
 
         static void Main(string[] args)
         {
@@ -133,19 +133,19 @@ namespace CSBA.ImportData
                                     }
                                 case "AVG":
                                     {
-                                        double? dValue = Math.Round(sheet.Cells[i, j].value, 3, MidpointRounding.AwayFromZero);
+                                        double? dValue = Math.Round((double)sheet.Cells[i, j].value, 3, MidpointRounding.AwayFromZero);
                                         cHitter.AVG = dValue;
                                         break;
                                     }
                                 case "OBA":
                                     {
-                                        double? dValue = Math.Round(sheet.Cells[i, j].value,3, MidpointRounding.AwayFromZero);
+                                        double? dValue = Math.Round((double)sheet.Cells[i, j].value,3, MidpointRounding.AwayFromZero);
                                         cHitter.OBA = dValue;
                                         break;
                                     }
                                 case "SLG":
                                     {
-                                        double? dValue = Math.Round(sheet.Cells[i, j].value, 3, MidpointRounding.AwayFromZero);
+                                        double? dValue = Math.Round((double)sheet.Cells[i, j].value, 3, MidpointRounding.AwayFromZero);
                                         cHitter.SLG = dValue;
                                         break;
                                     }
@@ -223,7 +223,7 @@ namespace CSBA.ImportData
                                     }
                                 case "TB":
                                     {
-                                        int? IValue = Convert.ToInt32(Math.Round(sheet.Cells[i, j].value, 0, MidpointRounding.AwayFromZero));
+                                        int? IValue = Convert.ToInt32(Math.Round((double)sheet.Cells[i, j].value, 0, MidpointRounding.AwayFromZero));
                                         cHitter.TB = IValue;
                                         break;
                                     }
@@ -393,7 +393,7 @@ namespace CSBA.ImportData
                                     }
                                 case "ERA":
                                     {
-                                        double? dValue = Math.Round(sheet.Cells[i, j].value, 3, MidpointRounding.AwayFromZero);
+                                        double? dValue = Math.Round((double)sheet.Cells[i, j].value, 3, MidpointRounding.AwayFromZero);
                                         cPitcher.ERA = dValue;
                                         break;
                                     }
@@ -475,37 +475,37 @@ namespace CSBA.ImportData
                                     }
                                 case "IP/9":
                                     {
-                                        double? dValue = Math.Round(sheet.Cells[i, j].value, 2, MidpointRounding.AwayFromZero);
+                                        double? dValue = Math.Round((double)sheet.Cells[i, j].value, 2, MidpointRounding.AwayFromZero);
                                         cPitcher.IP_9 = dValue;
                                         break;
                                     }
                                 case "H/9":
                                     {
-                                        double? dValue = Math.Round(sheet.Cells[i, j].value, 2, MidpointRounding.AwayFromZero);
+                                        double? dValue = Math.Round((double)sheet.Cells[i, j].value, 2, MidpointRounding.AwayFromZero);
                                         cPitcher.H_9 = dValue;
                                         break;
                                     }
                                 case "W/9":
                                     {
-                                        double? dValue = Math.Round(sheet.Cells[i, j].value, 2, MidpointRounding.AwayFromZero);
+                                        double? dValue = Math.Round((double)sheet.Cells[i, j].value, 2, MidpointRounding.AwayFromZero);
                                         cPitcher.W_9 = dValue;
                                         break;
                                     }
                                 case "HR/9":
                                     {
-                                        double? dValue = Math.Round(sheet.Cells[i, j].value, 2, MidpointRounding.AwayFromZero);
+                                        double? dValue = Math.Round((double)sheet.Cells[i, j].value, 2, MidpointRounding.AwayFromZero);
                                         cPitcher.HR_9 = dValue;
                                         break;
                                     }
                                 case "K/9":
                                     {
-                                        double? dValue = Math.Round(sheet.Cells[i, j].value, 2, MidpointRounding.AwayFromZero);
+                                        double? dValue = Math.Round((double)sheet.Cells[i, j].value, 2, MidpointRounding.AwayFromZero);
                                         cPitcher.K_9 = dValue;
                                         break;
                                     }
                                 case "HW/9":
                                     {
-                                        double? dValue = Math.Round(sheet.Cells[i, j].value, 2, MidpointRounding.AwayFromZero);
+                                        double? dValue = Math.Round((double)sheet.Cells[i, j].value, 2, MidpointRounding.AwayFromZero);
                                         cPitcher.HW_9 = dValue;
                                         break;
                                     }
